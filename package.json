@@ -1,0 +1,38 @@
+{
+  "name": "octokit-plugin-sentiment",
+  "version": "1.0.2",
+  "description": "It allows you to analyse the sentiment of a github comment easily",
+  "main": "index.js",
+  "scripts": {
+    "patch-release": "npm version patch && npm publish",
+    "test": "node analyseSentiment.spec.js",
+    "test:watch": "nodemon --exec \"npm test\""
+  },
+  "keywords": [
+    "github",
+    "octokit",
+    "github-api",
+    "sentiment"
+  ],
+  "author": "Aditya Agarwal @itaditya (adi.surge.sh)",
+  "license": "ISC",
+  "peerDependencies": {
+    "@octokit/rest": "^14.0.9"
+  },
+  "homepage": "https://github.com/itaditya/octokit-plugin-sentiment#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itaditya/octokit-plugin-sentiment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/itaditya/octokit-plugin-sentiment/issues"
+  },
+  "devDependencies": {
+    "tap-spec": "^4.1.1",
+    "tape": "^4.9.0"
+  },
+  "dependencies": {
+    "@octokit/rest": "^15.1.7",
+    "superagent": "^3.8.2"
+  }
+}
