@@ -7,7 +7,7 @@
 
 ```js
 const octokit = require('@octokit/rest')();
-const sentimentPlugin = require('octokit-plugin-sentiment')('perspective-api-key'); // Import the plugin
+const sentimentPlugin = require('octokit-plugin-sentiment')('provide-your-perspective-api-key'); // Import the plugin
 
 octokit.plugin(sentimentPlugin); // Plug-in the plugin
 

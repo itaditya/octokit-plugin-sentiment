@@ -1,7 +1,7 @@
 const test = require('tape');
 const tapSpec = require('tap-spec');
 
-const analyseSentiment = require('./analyseSentiment')('AIzaSyCrXVFGPQlu4ti8nmfZqgvUFMqzQ8BQDJM');
+const analyseSentiment = require('./analyseSentiment')('provide-your-perspective-api-key');
 
 test
   .createStream()

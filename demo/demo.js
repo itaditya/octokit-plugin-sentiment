@@ -1,5 +1,5 @@
 const octokit = require('@octokit/rest')();
-const sentimentPlugin = require('octokit-plugin-sentiment')('AIzaSyCrXVFGPQlu4ti8nmfZqgvUFMqzQ8BQDJM');
+const sentimentPlugin = require('octokit-plugin-sentiment')('provide-your-perspective-api-key');
 
 octokit.plugin(sentimentPlugin);
 
