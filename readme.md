@@ -7,7 +7,7 @@
 
 ```js
 const octokit = require('@octokit/rest')();
-const sentimentPlugin = require('octokit-plugin-sentiment'); // Import the plugin
+const sentimentPlugin = require('octokit-plugin-sentiment')('perspective-api-key'); // Import the plugin
 
 octokit.plugin(sentimentPlugin); // Plug-in the plugin
 
@@ -25,6 +25,8 @@ octokit.analyseSentiment({ comment }) // Call the plugin methods
 * Fork and Clone this repo.
 * On your local machine run `npm link` in the root of the cloned project.
 * `cd` into demo folder and run `npm link octokit-plugin-sentiment`.
+* Get your Perspective API key.
+* Use `npm test` to run unit test on the analyseSentiment function.
 * Now make changes in the `index.js` and test it via `demo/demo.js` file.
 * When you are ready create a branch and submit a PR.
 

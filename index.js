@@ -1,8 +1,7 @@
-const analyseSentiment = require('./analyseSentiment');
-
-function sentimentPlugin (octokit) {
-  octokit.analyseSentiment = analyseSentiment;
-}
-
-module.exports = sentimentPlugin;
-
+module.exports = (API_KEY) => {
+  const analyseSentiment = require('./analyseSentiment')(API_KEY);
+  const sentimentPlugin = (octokit) => {
+    octokit.analyseSentiment = analyseSentiment;
+  }
+  return sentimentPlugin;
+};

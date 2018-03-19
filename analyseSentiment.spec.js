@@ -1,7 +1,7 @@
 const test = require('tape');
 const tapSpec = require('tap-spec');
 
-const analyseSentiment = require('./analyseSentiment');
+const analyseSentiment = require('./analyseSentiment')('AIzaSyCrXVFGPQlu4ti8nmfZqgvUFMqzQ8BQDJM');
 
 test
   .createStream()

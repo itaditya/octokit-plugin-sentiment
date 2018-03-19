@@ -1,5 +1,5 @@
 const octokit = require('@octokit/rest')();
-const sentimentPlugin = require('octokit-plugin-sentiment');
+const sentimentPlugin = require('octokit-plugin-sentiment')('AIzaSyCrXVFGPQlu4ti8nmfZqgvUFMqzQ8BQDJM');
 
 octokit.plugin(sentimentPlugin);
 
